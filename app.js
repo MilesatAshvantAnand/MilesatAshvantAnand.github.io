@@ -21,8 +21,4 @@ card.onmousemove = e => handleOnMove(e);
 
 card.ontouchmove = e => handleOnMove(e.touches[0]);
 
-$(".option").click(function(){
-  $(".option").removeClass("active");
-  $(this).addClass("active");
-  
-});
+
