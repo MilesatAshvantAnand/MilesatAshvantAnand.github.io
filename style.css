@@ -21,11 +21,14 @@
   --user-button-text: #323133;
   --user-button-shadow: rgba(0, 0, 0, 0.1);
 }
-
-body {
-  background: rgb(var(--background-rgb));
+html{
+  background: linear-gradient(180deg, rgba(2,25,18,1) 40%, rgba(2,30,25,1) 60%, rgb(3, 35, 35) 100%);
   justify-content: center;
-  font-family:sans-serif;
+}
+body {
+  background: linear-gradient(180deg, rgba(2,25,18,1) 40%, rgba(2,30,25,1) 60%, rgb(3, 35, 35) 100%);
+  justify-content: center;
+  font-family: 'Bitter', serif;
   color: white;
 }
 
@@ -131,6 +134,7 @@ body {
     border-radius: 1rem;
   }
 }
+
 /* for Firefox */
 @-moz-keyframes my-animation {
   from {
@@ -169,9 +173,8 @@ body {
 
 .magikythingy {
   z-index: 5000;
-  bottom: 1rem !important;
   right: 1rem !important;
-  position:static;
+  position: static;
   color: var(--user-button-text);
   transition: 1s 0s ease-out;
   -webkit-animation: slide 3s ease-out forwards;
@@ -183,6 +186,7 @@ body {
   overflow: hidden;
   font-family: "Bitter", serif;
   transition: 0.25s;
+
 }
 
 @-webkit-keyframes slide {
@@ -273,39 +277,6 @@ body {
   transition: 0s;
 }
 
-.magikythingy #user-button .u-icons a[href="https://twitter.com/zed_dash"] {
-  position: relative;
-}
-
-.magikythingy #user-button .u-icons a[href="https://twitter.com/zed_dash"]:before {
-  content: "Middle Click";
-  position: absolute;
-  top: -1.5rem;
-  left: 50%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  white-space: pre;
-  transform: translateX(-50%);
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.25s ease-in;
-  background: #fffc;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-}
-
-.magikythingy #user-button .u-icons a[href="https://twitter.com/zed_dash"].show:before {
-  opacity: 1;
-  transition: 0.25s ease-out;
-}
-
-.magikythingy #user-button .u-icons a[href="https://twitter.com/zed_dash"] div {
-  color: #1da1f2;
-}
-
-.magikythingy #user-button .u-icons a[href="https://codepen.io/z-"] div {
-  background: black;
-  color: white;
-}
 
 .magikythingy #user-button .u-icons a.u-random div {
   position: relative;
@@ -355,77 +326,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.magikythingy #user-button .u-icons>*:hover,
-.magikythingy #user-button .u-icons>*:focus-within {
-  background: var(--hcolour);
-}
-
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(1):nth-child(1),
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(1)~*:nth-child(1) {
-  left: 25%;
-  top: 25%;
-}
-
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(2):nth-child(1),
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(2)~*:nth-child(1) {
-  left: 37.5%;
-  top: 18.75%;
-}
-
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(2):nth-child(2),
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(2)~*:nth-child(2) {
-  left: 18.75%;
-  top: 37.5%;
-}
-
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(3):nth-child(1),
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(3)~*:nth-child(1) {
-  left: 50%;
-  top: 15.625%;
-}
-
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(3):nth-child(2),
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(3)~*:nth-child(2) {
-  left: 25%;
-  top: 25%;
-}
-
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(3):nth-child(3),
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(3)~*:nth-child(3) {
-  left: 15.625%;
-  top: 50%;
-}
-
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(4):nth-child(1),
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(4)~*:nth-child(1) {
-  left: 62.5%;
-  top: 18.75%;
-}
-
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(4):nth-child(2),
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(4)~*:nth-child(2) {
-  left: 37.5%;
-  top: 18.75%;
-}
-
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(4):nth-child(3),
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(4)~*:nth-child(3) {
-  left: 18.75%;
-  top: 37.5%;
-}
-
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(4):nth-child(4),
-.magikythingy #user-button .u-icons>*:first-child:nth-last-child(4)~*:nth-child(4) {
-  left: 18.75%;
-  top: 62.5%;
-}
-
-.magikythingy #user-button:hover .u-icons,
-.magikythingy #user-button:focus-within .u-icons {
-  width: 300% !important;
-  height: 300% !important;
 }
 
 .magikythingy .credit {
@@ -498,36 +398,13 @@ body {
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 
-.magikythingy .options .option:nth-child(1) {
-  --defaultBackground: #ed5565;
-}
-
-.magikythingy .options .option:nth-child(2) {
-  --defaultBackground: #fc6e51;
-}
-
-.magikythingy .options .option:nth-child(3) {
-  --defaultBackground: #ffce54;
-}
-
-.magikythingy .options .option:nth-child(4) {
-  --defaultBackground: #2ecc71;
-}
-
-.magikythingy .options .option:nth-child(5) {
-  --defaultBackground: #5d9cec;
-}
-
-.magikythingy .options .option:nth-child(6) {
-  --defaultBackground: #ac92ec;
-}
 
 .magikythingy .options .option.active {
   flex-grow: 10000;
   transform: scale(1);
   max-width: 600px;
   margin: 0px;
-  border-radius: 40px;
+  border-radius: 15px;
   background-size: auto 100%;
   /*&:active {
         transform:scale(0.9);
@@ -550,7 +427,7 @@ body {
 
 .magikythingy .options .option:not(.active) {
   flex-grow: 1;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
 .magikythingy .options .option:not(.active) .shadow {
@@ -619,17 +496,30 @@ body {
 
 .magikythingy .options .option .label .info .sub {
   transition-delay: 0.1s;
-  text-wrap:wrap;
+  text-wrap: wrap;
 }
-.main{
+
+.main {
   font-family: sans-serif;
 }
-.subjectslabel{
+
+.subjectslabel,h3 {
   font-size: 700%;
-  color:rgb(11, 71, 53);
-  font-family: 'Bitter', serif; 
-  margin: 10% 5%;
+  color: rgb(11, 71, 53);
+  font-family: 'Bitter', serif;
+  margin: 5%;
   -webkit-animation: slide 3s ease-out backwards;
   animation: slide 3s ease-out backwards;
   transition: 0.15s;
 }
+
+.active {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub{
+  margin-bottom: 5%;
+}
+
