@@ -237,28 +237,6 @@ body {
   }
 }
 
-.magikythingy #user-button .u-icons a.u-random:not(:hover) div {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-.magikythingy #user-button .u-icons>* {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: var(--singlecolour);
-  border-radius: 100%;
-  cursor: pointer;
-  transform: translate(-50%, -50%);
-  transition: 0.25s -0.05s;
-}
-
-.magikythingy #user-button .u-icons>*:before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .magikythingy .credit {
   position: absolute;
