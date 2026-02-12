@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashvant Anand</title>
+    <meta name="description" content="Personal website of Ashvant Anand - Builder, Robotics Enthusiast, and Student.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">
+                <a href="#" style="color: var(--text-primary); font-weight: 600; text-decoration: none;">Ashvant
+                    Anand</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#now">Now</a></li>
+                <li><a href="#vex">VEX</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero / Intro -->
+        <section id="about" class="hero fade-in-section">
+            <div class="hero-content">
+                <h1>Ashvant Anand</h1>
+                <p class="tagline">Student, Builder, Robotics Engineer.</p>
+                <ul>
+                    <li>Based in Dublin, Ireland.</li>
+                    <li>Passion for Robotics, ML, and Economics.</li>
+                    <li>Building things that matter.</li>
+                </ul>
+            </div>
+            <div class="hero-image">
+                <!-- Replace with actual profile picture path if different -->
+                <img src="images/profile-pic.JPG" alt="Ashvant Anand">
+            </div>
+        </section>
+
+        <!-- Now Section -->
+        <section id="now" class="fade-in-section">
+            <h2>Now</h2>
+            <p>What I'm focused on currently:</p>
+            <ul>
+                <li><strong>VEX Robotics:</strong> Preparing for the upcoming regional championship. working on odometry
+                    and PID control.</li>
+                <li><strong>Learning:</strong> Deep diving into Machine Learning and its applications in finance.</li>
+                <li><strong>Building:</strong> Developing a few micro-SaaS projects to solve personal itches.</li>
+                <li><strong>Reading:</strong> Exploring books on behavioral economics.</li>
+            </ul>
+        </section>
+
+        <!-- VEX Robotics Section -->
+        <section id="vex" class="fade-in-section">
+            <h2>VEX Robotics</h2>
+            <div class="vex-image">
+                <img src="images/VEX-team.JPG" alt="VEX Robotics Team">
+            </div>
+            <p>
+                I compete in VEX Robotics, focusing on high-level autonomous routines and mechanical reliability.
+                My role involves both software (C++) and hardware integration.
+            </p>
+
+            <button class="expand-btn" data-target="vex-details-1">Show Details <span>&#9662;</span></button>
+
+            <div id="vex-details-1" class="vex-details-wrapper">
+                <h3>Motion Control</h3>
+                <ul>
+                    <li>Implemented custom PID controllers for precise arm movement.</li>
+                    <li>Developed an odometry tracking system for accurate autonomous positioning.</li>
+                    <li>Motion profiling to ensure smooth acceleration and deceleration.</li>
+                </ul>
+
+                <h3>Mechanical Design</h3>
+                <ul>
+                    <li>Designed a custom drive base for maximum traction and speed.</li>
+                    <li>Iterated on intake mechanisms to handle game objects efficiently.</li>
+                </ul>
+
+                <h3>Competition History</h3>
+                <ul>
+                    <li><strong>2025:</strong> Regional Qualifiers - [Place/Award]</li>
+                    <li><strong>2024:</strong> National Excellence Award Winner</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="fade-in-section">
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-title">Project Alpha</span>
+                    <span class="project-tags">ML / Python</span>
+                </div>
+                <p>A machine learning model that predicts stock market trends based on sentiment analysis of news
+                    headlines.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-title">Finance Tracker App</span>
+                    <span class="project-tags">Mobile / Flutter</span>
+                </div>
+                <p>A personal finance application to track expenses and set savings goals. Built with Flutter and
+                    Firebase.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-title">Personal Website</span>
+                    <span class="project-tags">Web / Node.js</span>
+                </div>
+                <p>You're looking at it! A minimal, text-first website to showcase my work and interests.</p>
+            </div>
+        </section>
+
+        <!-- Tech & Interests -->
+        <section id="tech" class="fade-in-section">
+            <h2>Tech & Interests</h2>
+            <ul>
+                <li><strong>Languages:</strong> C++, JavaScript, Python, Dart.</li>
+                <li><strong>Tools:</strong> Git, VS Code, Linux.</li>
+                <li><strong>Interests:</strong> Algorithmic Trading, Macroeconomics, Startups.</li>
+            </ul>
+        </section>
+
+        <!-- Writing / Notes (Placeholder) -->
+        <!-- 
+        <section id="writing">
+            <h2>Writing</h2>
+            <ul>
+                <li><a href="#">Article Title 1</a> - Brief description.</li>
+                <li><a href="#">Article Title 2</a> - Brief description.</li>
+            </ul>
+        </section>
+        -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="fade-in-section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out for collaborations or just to say hi.</p>
+            <ul>
+                <li><a href="mailto:ashvant@example.com">Email</a></li>
+                <li><a href="https://linkedin.com/in/ashvantanand" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/ashvantanand" target="_blank">GitHub</a></li>
+            </ul>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+                <div id="form-message"></div>
+            </form>
+        </section>
+
+        <footer>
+            <p style="text-align: center; margin-top: 4rem; font-size: 0.8rem; color: var(--text-secondary);">
+                &copy; 2026 Ashvant Anand.
+            </p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
